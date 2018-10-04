@@ -1,2 +1,13 @@
+## Jest watch mode with test filters with collectCoverageFrom issue
+
+### Introduction
+- `yarn test:watch:withCoverageFrom` (with filtering e.g. by `add-test` file name coverage calculation is wrong as it calulcates coverage for everything instead only for filtered tests)
+
+- `yarn test:watch:withoutCoverageFrom` (with filtering e.g. by `add-test` file name coverage calculation is correctly only for files related to filtered test files)
+
+
 ### Repro steps for Jest watch mode with test filters with collectCoverageFrom
-`yarn test:watch:coverageFrom`
+0. `yarn test:watch:withCoverageFrom`
+0. press `p` in the menu
+0. type `add-test` as a pattern
+0. The coverage is calculated for all files based on `collectCoverageFrom` and filter pattern isn't taken into account
