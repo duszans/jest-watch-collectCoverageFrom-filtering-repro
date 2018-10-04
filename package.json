@@ -4,15 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test:watch:coverageFrom": "jest --watch --coverage --collectCoverageFrom='**/*.js'"
+    "test:watch:withCoverageFrom": "jest --watch --coverage --collectCoverageFrom='src/**/*.js'",
+    "test:watch:withoutCoverageFrom": "jest --watch --coverage"
   },
   "jest": {
     "testRegex": ".*-test\\.js$",
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "**/*.js"
-    ]
+    "testEnvironment": "node"
   },
   "dependencies": {
     "jest": "^23.6.0"
