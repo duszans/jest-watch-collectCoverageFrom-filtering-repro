@@ -2,8 +2,10 @@
 
 ### Introduction
 - `yarn test:watch:withCoverageFrom` (with filtering e.g. by `add-test` file name coverage calculation is wrong as it calulcates coverage for everything instead only for filtered tests)
+![](with%20collectCoverageFrom.png)
 
 - `yarn test:watch:withoutCoverageFrom` (with filtering e.g. by `add-test` file name coverage calculation is correctly only for files related to filtered test files)
+![](without%20collectCoverageFrom.png)
 
 
 ### Repro steps for Jest watch mode with test filters with collectCoverageFrom
