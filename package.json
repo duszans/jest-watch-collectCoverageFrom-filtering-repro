@@ -1,0 +1,20 @@
+{
+  "name": "jest-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test:watch:coverageFrom": "jest --watch --coverage --collectCoverageFrom='**/*.js'"
+  },
+  "jest": {
+    "testRegex": ".*-test\\.js$",
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.js"
+    ]
+  },
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
