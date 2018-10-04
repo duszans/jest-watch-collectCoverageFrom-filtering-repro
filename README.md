@@ -7,7 +7,7 @@
 
 
 ### Repro steps for Jest watch mode with test filters with collectCoverageFrom
-0. `yarn test:watch:withCoverageFrom`
-0. press `p` in the menu
-0. type `add-test` as a pattern
-0. The coverage is calculated for all files based on `collectCoverageFrom` and filter pattern isn't taken into account
+1. `yarn test:watch:withCoverageFrom`
+1. press `p` in the menu
+1. type `add-test` as a pattern
+1. The coverage is calculated for all files based on `collectCoverageFrom` and filter pattern isn't taken into account
