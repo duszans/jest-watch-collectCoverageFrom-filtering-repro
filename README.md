@@ -1,5 +1,7 @@
 ## Jest watch mode with test filters with collectCoverageFrom issue
 
+Jest Github repository issue: https://github.com/facebook/jest/issues/7101
+
 ### Repro steps
 1. `yarn` (or use npm)
 1. `yarn test:watch:withCoverageFrom`
