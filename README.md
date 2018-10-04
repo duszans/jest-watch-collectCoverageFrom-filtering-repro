@@ -1,6 +1,6 @@
 ## Jest watch mode with test filters with collectCoverageFrom issue
 
-### Repro steps for Jest watch mode with test filters with collectCoverageFrom
+### Repro steps
 1. `yarn test:watch:withCoverageFrom`
 1. press `p` in the menu
 1. type `add-test` as a pattern
